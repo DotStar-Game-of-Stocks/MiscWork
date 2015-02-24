@@ -1,0 +1,15 @@
+/*xinyi(alice)li
+2015/02/23*/
+
+//not sure if we need to do it on java or python, but I used python here.
+
+a = 1;
+b = 0;
+for i in range(1,101):
+   a = a * i;
+number_string = str(a);
+for ch in number_string:
+    b = b + int(ch);
+print (b);
+  
+
