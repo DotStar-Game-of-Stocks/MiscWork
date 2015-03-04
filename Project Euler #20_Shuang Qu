@@ -1,6 +1,6 @@
 
 import java.math.BigInteger;
-//import java.math.*;
+
 public class euler20 {
 		
 		public static void main(String[] strings) {
