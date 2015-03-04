@@ -1,0 +1,35 @@
+
+import java.math.BigInteger;
+//import java.math.*;
+public class euler20 {
+		
+		public static void main(String[] strings) {
+			
+			int getnum = 100;
+
+			BigInteger product = BigInteger.valueOf(1);
+			int sum=0;
+			String printProduct;
+			product= factorial(getnum);
+								
+			printProduct=product.toString();
+			System.out.println(printProduct);
+			
+			for (int i=0; i<printProduct.length();i++){
+				sum+=printProduct.charAt(i)-'0';	
+			}
+			
+			System.out.println(sum);			
+		}
+		
+		public static BigInteger factorial(int n) {
+			if (n < 0)
+				throw new IllegalArgumentException("Factorial of negative number");
+			BigInteger prod = BigInteger.ONE;
+			for (int i = 2; i <= n; i++)
+				prod = prod.multiply(BigInteger.valueOf(i));
+			return prod;
+		}
+		
+
+	}
